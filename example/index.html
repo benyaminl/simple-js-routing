@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example History</title>
+</head>
+<body>
+  <a route="home" title="Home SIB">Home</a>
+  <a route="about" title="About SIB">About</a>
+  <div id="body">Ini Body</div>
+  <script>
+    document.querySelector("*[route='home']").onclick = function() {
+      document.getElementById('body').innerText = "Ini Home lah";
+    }
+    document.querySelector("*[route='about']").onclick = function() {
+      document.getElementById('body').innerText = "Ini about yang aku lakukan lah";
+    }
+  </script>
+  <script src="../src/route.js"></script>
+</body>
+</html>
